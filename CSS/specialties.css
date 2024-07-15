@@ -1,0 +1,181 @@
+/* Specialty Image Styles */
+
+/* Define styles for the specialty images */
+#Specialty-1,
+#Specialty-2,
+#Specialty-3,
+#Specialty-4,
+#Specialty-5 {
+    width: 100rem;
+    /* Set width of images */
+    height: 35rem;
+    /* Set height of images */
+    border-radius: 8px;
+    /* Round the corners */
+    margin-bottom: 20px;
+    /* Add margin below images */
+}
+
+/* Slide Styles */
+
+/* Define styles for the slides */
+.mySlides {
+    display: none;
+    /* Hide slides by default */
+}
+
+
+/* Image Styles */
+
+/* Define styles for images */
+img {
+    vertical-align: middle;
+    /* Align images vertically in the middle */
+}
+
+/* Slideshow Container */
+
+/* Define styles for the slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    /* Set maximum width */
+    position: relative;
+    /* Set position to relative for absolute positioning of elements */
+    margin: auto;
+    /* Center the container */
+}
+
+
+/* Navigation Buttons */
+
+/* Define styles for the previous and next buttons */
+.prev,
+.next {
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    position: absolute;
+    /* Position absolutely within the container */
+    top: 50%;
+    /* Center vertically */
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    /* Adjust margin to center vertically */
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    /* Smooth transition for background color */
+    border-radius: 0 3px 3px 0;
+    /* Round corners */
+    -webkit-user-select: none;
+    /* Disable text selection */
+    user-select: none;
+    /* Disable text selection */
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    /* Position to the right */
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darken background on hover */
+}
+
+/* Caption text */
+
+/* Define styles for the caption text */
+.text {
+    color: #f2f2f2;
+    /* Set text color */
+    font-size: 15px;
+    /* Set font size */
+    padding: 8px 12px;
+    /* Add padding */
+    position: absolute;
+    /* Position absolutely within the container */
+    bottom: 8px;
+    /* Position at the bottom */
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center text */
+}
+
+/* Number text */
+
+/* Define styles for the number text */
+.numbertext {
+    color: #f2f2f2;
+    /* Set text color */
+    font-size: 12px;
+    /* Set font size */
+    padding: 8px 12px;
+    /* Add padding */
+    position: absolute;
+    /* Position absolutely within the container */
+    top: 0;
+    /* Position at the top */
+}
+
+/* The dots/bullets/indicators */
+
+/* Define styles for the dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    /* Set background color */
+    border-radius: 50%;
+    /* Make dots circular */
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    /* Smooth transition for background color */
+}
+
+/* Position the dots container */
+.slides-dot {
+    position: absolute;
+    padding: 38% 0 0 1%;
+}
+
+/* Active dot and hover effect */
+.active,
+.dot:hover {
+    background-color: #717171;
+    /* Darken background color on hover */
+}
+
+/* Fading Animation */
+
+/* Define styles for the fade animation */
+.fade {
+    animation-name: fade;
+    /* Set animation name */
+    animation-duration: 1.5s;
+    /* Set animation duration */
+}
+
+/* Keyframes for fade animation */
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    /* Start with lower opacity */
+
+    to {
+        opacity: 1
+    }
+
+    /* End with full opacity */
+}

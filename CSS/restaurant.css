@@ -1,0 +1,69 @@
+
+/* Styles for the front page image */
+.front-page-img {
+    height: 300px;
+    width: 300px;
+    padding: 0px 0px 0px;  /* No padding */
+
+}
+
+/* Container Styles */
+
+/* Define styles for the main container */
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap;  /* Allow items to wrap to the next line */
+    justify-content: center;  /* Center items horizontally */
+    align-items: flex-start; /* Align items at the start vertically */
+    padding: 20px; /* Add padding around the container */
+    margin-top: 1%; /* Add a small margin at the top */
+}
+
+
+/* Styles for images within the container */
+.container img {
+    max-width: 100%; /* Ensure images don't exceed the container width */
+    height: auto;   /* Maintain aspect ratio */
+    flex: 1; /* Allow images to grow and shrink as needed */
+    margin-right: 20px; /* Add space to the right of images */
+}
+
+
+/* Styles for the text box within the container */
+.container .text-box {
+    flex: 2;  /* Allow text box to take up twice as much space as images */
+}
+
+
+/* Styles for the h2 element within the container */
+.container h2 {
+    margin-top: 0; /* Remove top margin */
+}
+
+
+/* Styles for text within the container */
+.container .text-container {
+    margin-bottom: 20px;  /* Add space at the bottom */
+    letter-spacing: 1.5px;  /* Add space between letters */
+    padding: 10px;  /* Add padding inside the container */
+}
+
+/* Button Styles */
+
+/* Define styles for the hero button */
+.hero-btn {
+    display: block; /* Make the button a block element */
+    padding: 10px 20px;  /* Add padding inside the button */
+    background-color: #333;  /* Set background color */
+    color: white;  /* Set text color */
+    border: none;  /* Remove default border */
+    cursor: pointer;  /* Change cursor to pointer on hover */
+    font-size: 1em;  /* Set font size */
+    border-radius: 5px;  /* Round the button corners */
+}
+
+/* Define styles for the hero button on hover */
+.hero-btn:hover {
+    background-color: #555;  /* Change background color on hover */
+    transition: 1s; /* Smooth transition effect */
+} 

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <!-- Preconnect to Google Fonts for performance optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link to external JavaScript file -->
+    <script src="../Js/app.js" defer></script>
+</head>
+
+<body>
+    <section>
+
+        <!-- Main heading -->
+        <h1>Chef Sam's Kitchen</h1>
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="Restaurant.html"><img src="../IMG/Restaurant logo.PNG" alt="Header Logo" id="restaurantIcon"></a>
+        </div>
+
+        <!-- Navigation bar -->
+        <nav>
+            <div class="nav-links" id="navLinks">
+
+                <!-- Close menu icon -->
+                <i class="fa fa-times" id="hide-menu" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Restaurant.html">Restaurant</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Specialties.html">Specialties</a></li>
+                    <li><a href="Group-Menu.html">Group Menu</a></li>
+                    <li><a href="Reservation.html">Reservations</a></li>
+                </ul>
+            </div>
+
+            <!-- Open menu icon -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Main content section -->
+        <div class="container">
+
+            <!-- Front page image -->
+            <img src="../IMG/Home Page img.jpeg" alt="Front Page Image" class="front-page-img">
+            <div class="text-box">
+
+                <!-- Subheading -->
+                <h2> RESTAURANT</h2>
+
+                <!-- Description text -->
+                <p class="text-content">
+                    Chef Sam's Kitchen is the flagship restaurant of acclaimed chef Sam, renowned for his culinary
+                    mastery
+                    and
+                    innovative cuisine. Nestled in a beautifully renovated farmhouse, Chef Sam's Kitchen offers a warm
+                    and
+                    intimate dining experience where guests can enjoy stunning views of the rolling countryside and
+                    picturesque
+                    gardens.
+
+                    In our open kitchen, you can watch our skilled chefs create exquisite dishes using the finest
+                    ingredients.
+                    Our menu features a generous tasting selection, showcasing locally sourced produce and herbs from
+                    our
+                    own
+                    garden. We take pride in foraging ingredients from the surrounding landscape, ensuring every dish
+                    reflects
+                    the rich flavors of the region.
+
+                    Join us for dinner from Wednesday to Saturday, or indulge in a delightful Saturday lunch. Our
+                    inviting
+                    and
+                    rustic ambiance perfectly complements the culinary journey, making each visit to Chef Sam's Kitchen
+                    a
+                    memorable dining experience. We strive to blend the charm of the countryside with exceptional fine
+                    dining,
+                    creating a welcoming atmosphere for all our guests.</p>
+
+                <!-- Booking button -->
+                <button onclick="redirectToReservations()" class="hero-btn"> BOOK NOW </button>
+            </div>
+        </div>
+
+        <!-- Cookies banner -->
+        <div class="cookies-style">
+            <div id="cookies-banner" class="cookies-banner">
+                <p>We use cookies to ensure you get the best experience on our website. <a href="cookies.html"
+                        target="_blank">Learn more</a></p>
+                <button id="accept-cookies">Accept</button>
+                <button id="reject-cookies">Reject</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Footer logo -->
+        <a href="Restaurant.html"><img src="../IMG/Restaurant logo.PNG" alt="Footer Logo" width="50px"
+                height="50px"></a>
+        <p>&copy; 2024 Our Restaurant</p>
+
+        <!-- Contact details and other information -->
+        <div>
+            <div class="address">
+                <h3>ADDRESS</h3>
+                <p>1 Dunworth Street,<br>
+                    Rusholme, <br>
+                    Manchester, <br>
+                    M14 7WH.</p>
+            </div>
+            <div>
+                <h3>GET IN TOUCH</h3>
+                <p>khaluuchenna@gmail.com</p>
+                <p>+44 (0) 161 123 4567</p>
+            </div>
+            <div class="working-hours">
+                <h3>SERVICE HOURS</h3>
+                <p>Wednesday: 19:00- 00:00 <br>
+                    Thursday: 19:00 - 00:00 <br>
+                    Friday: 19:00 - 00:00 <br>
+                    Saturday: 12:00 - 16:00 / 19:00 - 00:00 <br>
+                    Sunday - Tuesday: Closed
+                </p>
+            </div>
+            <div>
+                <h3>SOCIAL</h3>
+                <!-- Social media icon -->
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"
+                        aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <!-- Extra links -->
+        <div class="extras">
+            <ul>
+                <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                <li><a href="legal-notice.html" target="_blank">Legal Notice</a></li>
+                <li><a href="cookies.html" target="_blank">Cookies Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

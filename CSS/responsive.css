@@ -1,0 +1,204 @@
+/* Media Queries */
+
+@media (max-width:700px) {
+
+    /* Tablet Rules */
+    /* nav {
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .nav-links ul li {
+        display: block;
+    }
+
+
+    .nav-links {
+        position: absolute;
+        background: var(--black-olive);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+
+    nav .fa {
+        display: block;
+        color: aquamarine;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    #hide-menu {
+        position: relative;
+        right: 10px;
+
+    }
+
+    /* 
+    nav .navlinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    /* nav .navlinks .navlink {
+        margin: 10px 0;
+    } */
+
+    h1 {
+        font-size: 2.0rem;
+        text-align: center;
+
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
+    #Specialty-1,
+    #Specialty-2,
+    #Specialty-3,
+    #Specialty-4,
+    #Specialty-5 {
+        width: 700px;
+        height: 500px;
+    }
+
+    .slides-dot {
+        display: none;
+    }
+
+    footer>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer>div>div {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .cookies-banner {
+        padding: 10px;
+    }
+
+    .cookies-banner p {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .cookies-banner button {
+        width: 100%;
+    }
+
+    .cookies-banner{
+        display: flex;
+        flex-direction: column;
+        left: 3%;
+        top: 10%;
+        width: 60%;
+        height: 40%;
+        
+    }
+
+    .cookies-banner button {
+        margin: 10px;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    /* Mobile Rules */
+    h1 {
+        font-size: 1.0rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .container button {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: var(--black-olive);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: aquamarine;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+
+    #Specialty-1,
+    #Specialty-2,
+    #Specialty-3,
+    #Specialty-4,
+    #Specialty-5 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .slides-dot {
+        display: none;
+    }
+
+    .menu-container{
+        width: 100%;
+    }
+
+    .cookies-banner{
+        display: flex;
+        flex-direction: column;
+        left: 3.5%;
+        top: 10%;
+        width: 60%;
+        height: 40%;
+        
+    }
+
+    .cookies-banner button {
+        margin: 10px;
+    }
+
+}

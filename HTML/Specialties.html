@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../Js/app.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <h1>Chef Sam's Kitchen</h1>
+        <div class="logo">
+            <a href="Restaurant.html"><img src="../IMG/Restaurant logo.PNG" alt="Header Logo" id="restaurantIcon"></a>
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="hide-menu" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Restaurant.html">Restaurant</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Specialties.html">Specialties</a></li>
+                    <li><a href="Group-Menu.html">Group Menu</a></li>
+                    <li><a href="Reservation.html">Reservations</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <div class="container specialties">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Slide 1 -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="/IMG/Herb-Crusted Cauliflower Steak.png" alt="Specialty 1" id="Specialty-1">
+                <div class="text">Herb-Crusted Cauliflower Steak</div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="/IMG/Grilled Salmon.png" alt="Specialty 2" id="Specialty-2">
+                <div class="text">Grilled Salmon</div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="/IMG/Roasted Beet Salad.png" alt="Specialty 3" id="Specialty-3">
+                <div class="text">Roasted Beet Salad</div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="/IMG/Chocolate Lava Cake.png" alt="Specialty 4" id="Specialty-4">
+                <div class="text">Chocolate Lava Cake</div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="/IMG/Vegetarian Alfredo Pasta.png" alt="Specialty 5" id="Specialty-5">
+                <div class="text">Vegetarian Alfredo Pasta</div>
+            </div>
+
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <!-- Dots for slide navigation -->
+        <br>
+        <div class="slides-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <footer>
+            <a href="Restaurant.html"><img src="../IMG/Restaurant logo.PNG" alt="Footer Logo" width="50px"
+                    height="50px"></a>
+            <p>&copy; 2024 Our Restaurant</p>
+            <div>
+                <div class="address">
+                    <h3>ADDRESS</h3>
+                    <p>1 Dunworth Street,<br>
+                        Rusholme, <br>
+                        Manchester, <br>
+                        M14 7WH.</p>
+                </div>
+                <div>
+                    <h3>GET IN TOUCH</h3>
+                    <p>khaluuchenna@gmail.com</p>
+                    <p>+44 (0) 161 123 4567</p>
+                </div>
+                <div class="working-hours">
+                    <h3>SERVICE HOURS</h3>
+                    <p>Wednesday: 19:00- 00:00 <br>
+                        Thursday: 19:00 - 00:00 <br>
+                        Friday: 19:00 - 00:00 <br>
+                        Saturday: 12:00 - 16:00 / 19:00 - 00:00 <br>
+                        Sunday - Tuesday: Closed
+                    </p>
+                </div>
+                <div>
+                    <h3>SOCIAL</h3>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"
+                            aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="extras">
+                <ul>
+                    <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="legal-notice.html" target="_blank">Legal Notice</a></li>
+                    <li><a href="cookies.html" target="_blank">Cookies Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+</body>
+
+</html>

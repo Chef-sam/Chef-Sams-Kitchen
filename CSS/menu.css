@@ -1,0 +1,35 @@
+/* Menu Section Styles */
+
+/* Define styles for the menu sections */
+.menu-section,
+.menu-section2 {
+    margin: 20px;
+    /* Add margin around the sections */
+    padding: 20px;
+    /* Add padding inside the sections */
+    background-color: var(--yellow);
+    /* Set background color */
+    box-shadow: 0 4px 8px rgba(192, 10, 10, 0.1);
+    /* Add a subtle shadow */
+    border-radius: 20px;
+    /* Round the corners */
+}
+
+
+/* Menu Category Styles */
+
+/* Define styles for the menu categories */
+.menu-category,
+.menu-category2 {
+    margin-bottom: 20px;
+    /* Add margin below each category */
+}
+
+/* Paragraph Styles within Menu Categories */
+
+/* Define styles for paragraphs within the menu categories */
+.menu-category p,
+.menu-category2 p {
+    margin: 10px 0;
+    /* Add margin above and below each paragraph */
+}

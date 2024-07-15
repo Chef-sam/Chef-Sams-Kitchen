@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../Js/app.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <h1>Chef Sam's Kitchen</h1>
+        <div class="logo">
+            <a href="Restaurant.html"><img src="../IMG/Restaurant logo.PNG" alt="Header Logo" id="restaurantIcon"></a>
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="hide-menu" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Restaurant.html">Restaurant</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Specialties.html">Specialties</a></li>
+                    <li><a href="Group-Menu.html">Group Menu</a></li>
+                    <li><a href="Reservation.html">Reservations</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Group Menu Section -->
+        <section class="group-menu-section">
+            <!-- Description of group menu options -->
+            <p>Our group menu options are perfect for any special occasion or large gathering. Choose from a variety
+                of delicious dishes to create a customized menu for your group. Each option includes a selection of
+                appetizers, mains, and desserts.</p>
+
+            <!-- Menu cards for visual representation -->
+            <div id="menu">
+                <!-- Card for Roasted Beet Salad -->
+                <div class="card">
+                    <img src="/IMG/Roasted Beet Salad.png" alt="roasted-beet-salad">
+                    <div class="details">
+                        <div class="details-sub">
+                            <h5>Roasted-beet-salad</h5>
+                            <h5 class="price"> $10 </h5>
+                        </div>
+                        <p> A vibrant mix of roasted beets, goat cheese, candied walnuts, and arugula, drizzled with a
+                            balsamic reduction.</p>
+                    </div>
+                </div>
+
+                <!-- Card for Herb-Crusted Cauliflower Steak -->
+                <div class="card">
+                    <img src="/IMG/Herb-Crusted Cauliflower Steak.png" alt=" Cauliflower Steak">
+                    <div class="details">
+                        <div class="details-sub">
+                            <h5>Herb-Crusted Cauliflower Steak</h5>
+                            <h5 class="price"> $10 </h5>
+                        </div>
+                        <p> A hearty cauliflower steak crusted with fresh herbs,
+                            served with garlic mashed potatoes and seasonal vegetables.</p>
+                    </div>
+                </div>
+
+                <!-- Card for Chocolate Lava Cake -->
+                <div class="card">
+                    <img src="/IMG/Chocolate Lava Cake.png" alt="Chocolate Lava Cake">
+                    <div class="details">
+                        <div class="details-sub">
+                            <h5>Chocolate Lava Cake</h5>
+                            <h5 class="price"> $8 </h5>
+                        </div>
+                        <p>A decadent chocolate cake with a molten center, served with vanilla
+                            bean ice cream and fresh berries.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Dropdowns for group menu selection -->
+            <div class="menu-container">
+                <div class="menu-dropdowns">
+                    <!-- Dropdown for Appetizers -->
+                    <div class="menu-option">
+                        <label for="appetizers">Appetizers:</label>
+                        <select id="appetizers">
+                            <option value="roasted-beet-salad">Roasted Beet Salad - $5.00</option>
+                            <option value="stuffed-portobello-mushrooms">Stuffed Portobello Mushrooms - $6.00</option>
+                            <option value="carrot-ginger-soup">Carrot and Ginger Soup - $4.50</option>
+                        </select>
+                    </div>
+
+                    <!-- Dropdown for Mains -->
+                    <div class="menu-option">
+                        <label for="mains">Mains:</label>
+                        <select id="mains">
+                            <option value="herb-crusted-cauliflower-steak">Herb-Crusted Cauliflower Steak - $12.00
+                            </option>
+                            <option value="vegetable-wellington">Vegetable Wellington - $14.00</option>
+                            <option value="stuffed-bell-peppers">Stuffed Bell Peppers - $11.00</option>
+                        </select>
+                    </div>
+
+                    <!-- Dropdown for Desserts -->
+                    <div class="menu-option">
+                        <label for="desserts">Desserts:</label>
+                        <select id="desserts">
+                            <option value="chocolate-lava-cake">Chocolate Lava Cake - $7.00</option>
+                            <option value="lemon-tart">Lemon Tart - $6.00</option>
+                            <option value="pistachio-panna-cotta">Pistachio Panna Cotta - $8.00</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Reservation button -->
+                <button onclick="redirectToReservations()">Make a Reservation</button>
+            </div>
+        </section>
+
+        <footer>
+            <a href="Restaurant.html"><img src="../IMG/Restaurant logo.PNG" alt="Footer Logo" width="50px"
+                    height="50px"></a>
+            <p>&copy; 2024 Our Restaurant</p>
+            <div>
+                <div class="address">
+                    <h3>ADDRESS</h3>
+                    <p>1 Dunworth Street,<br>
+                        Rusholme, <br>
+                        Manchester, <br>
+                        M14 7WH.</p>
+                </div>
+                <div>
+                    <h3>GET IN TOUCH</h3>
+                    <p>khaluuchenna@gmail.com</p>
+                    <p>+44 (0) 161 123 4567</p>
+                </div>
+                <div class="working-hours">
+                    <h3>SERVICE HOURS</h3>
+                    <p>Wednesday: 19:00- 00:00 <br>
+                        Thursday: 19:00 - 00:00 <br>
+                        Friday: 19:00 - 00:00 <br>
+                        Saturday: 12:00 - 16:00 / 19:00 - 00:00 <br>
+                        Sunday - Tuesday: Closed
+                    </p>
+                </div>
+                <div>
+                    <h3>SOCIAL</h3>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"
+                            aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="extras">
+                <ul>
+                    <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="legal-notice.html" target="_blank">Legal Notice</a></li>
+                    <li><a href="cookies.html" target="_blank">Cookies Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+
+</body>
+
+</html>

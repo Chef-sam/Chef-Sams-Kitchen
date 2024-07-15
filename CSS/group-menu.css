@@ -1,0 +1,154 @@
+/* Group Menu Section */
+
+/* Define styles for the group menu section */
+.group-menu-section {
+    padding: 20px;
+    background-color: var(--black-olive);
+}
+
+/* Menu Grid */
+
+/* Define styles for the menu grid */
+#menu {
+    display: grid;
+    /* Use CSS Grid for layout */
+    padding: 10px;
+    /* Add padding inside the grid */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* Responsive columns */
+    grid-gap: 20px 40px;
+    /* Add gaps between grid items */
+    background: rgb(245, 242, 242);
+    /* Set background color */
+    min-height: 100vh;
+    /* Set minimum height */
+    margin-bottom: 20px;
+    /* Add margin below the grid */
+}
+
+/* Menu Container */
+
+/* Define styles for the menu container */
+.menu-container {
+    background-color: var(--carton);
+    /* Set background color */
+    margin: 5px;
+    /* Add margin around the container */
+    margin-left: auto;
+    /* Center the container horizontally */
+    margin-right: auto;
+    /* Center the container horizontally */
+    padding: 20px;
+    /* Add padding inside the container */
+    width: 40%;
+    /* Set container width */
+    display: flex;
+    /* Use Flexbox for layout */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    box-shadow: 10px 10px 5px lightblue;
+    /* Add box shadow */
+}
+
+/* Heading */
+
+/* Define styles for headings */
+.heading {
+    background: rgb(245, 242, 242);
+    /* Set background color */
+    color: #373333;
+    margin-bottom: 30px;
+    /* Add margin below heading */
+    padding: 60px 0 30px 0;
+    /* Add padding around heading */
+    grid-column: 1/-1;
+    /* Span the heading across all columns */
+    text-align: center;
+    /* Center-align text */
+}
+
+/* Subheading */
+
+/* Define styles for subheadings */
+.heading>h3 {
+    font-weight: 600;
+    /* Set font weight */
+    font-size: 22px;
+    /* Set font size */
+    letter-spacing: 5px;
+    /* Add letter spacing */
+}
+
+/* Card */
+
+/* Define styles for individual cards */
+.card {
+    display: grid;
+    /* Use CSS Grid for layout */
+    position: relative;
+    /* Set position to relative */
+    grid-template-rows: auto 1fr;
+    /* Define grid rows */
+    border-radius: 15px;
+    /* Round the corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    /* Add box shadow */
+    margin: 10px 20px;
+    /* Add margin around the cards */
+}
+
+/* Card Image */
+
+/* Define styles for images within cards */
+.card img {
+    position: relative;
+    /* Set position to relative */
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px 15px 0 0;
+    /* Round the top corners */
+}
+
+/* Card Details */
+
+/* Define styles for the details section within cards */
+.details {
+    padding: 20px 10px;
+    /* Add padding inside the details section */
+    display: grid;
+    /* Use CSS Grid for layout */
+    grid-template-rows: auto 1fr 50px;
+    /* Define grid rows */
+    grid-row-gap: 15px;
+    /* Add gap between rows */
+}
+
+/* Details Subsection */
+
+/* Define styles for the subsection within details */
+.details-sub {
+    display: grid;
+    /* Use CSS Grid for layout */
+    grid-template-columns: auto auto;
+    /* Define grid columns */
+}
+
+/* Subsection Headings */
+
+/* Define styles for headings within the details subsection */
+.details-sub h5 {
+    font-weight: 600;
+    /* Set font weight */
+    font-size: 18px;
+    /* Set font size */
+}
+
+/* Price */
+
+/* Define styles for the price */
+.price {
+    text-align: right;
+    /* Align text to the right */
+}

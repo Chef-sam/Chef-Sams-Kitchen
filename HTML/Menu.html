@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../Js/app.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <h1>Chef Sam's Kitchen</h1>
+        <div class="logo">
+            <a href="Restaurant.html"><img src="../IMG/Restaurant logo.PNG" alt="Header Logo" id="restaurantIcon"></a>
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="hide-menu" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Restaurant.html">Restaurant</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Specialties.html">Specialties</a></li>
+                    <li><a href="Group-Menu.html">Group Menu</a></li>
+                    <li><a href="Reservation.html">Reservations</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Section for "What to Expect" -->
+        <section>
+            <div class="container">
+                <h2>WHAT TO EXPECT</h2>
+                <p>Our menu features a delightful fusion of classic and contemporary dishes crafted from the freshest,
+                    locally-sourced ingredients. Expect a diverse range of flavors, from hearty appetizers and crisp
+                    salads
+                    to succulent mains and decadent desserts. Our talented chefs are dedicated to delivering a culinary
+                    experience that tantalizes your taste buds and leaves you craving more.</p>
+            </div>
+        </section>
+
+        <!-- Section for Dine-In Menu -->
+        <section class="menu-section">
+            <div class="menu-category">
+                <h2>Dine-In Menu</h2>
+                <h3>Starters</h3>
+                <p><strong>Roasted Beet Salad:</strong> A vibrant mix of roasted beets, goat cheese, candied walnuts,
+                    and
+                    arugula, drizzled with a balsamic reduction.</p>
+                <p><strong>Stuffed Portobello Mushrooms:</strong> Large portobello mushrooms filled with a savory blend
+                    of
+                    quinoa, spinach, and feta cheese, topped with a balsamic glaze.</p>
+                <p><strong>Carrot and Ginger Soup:</strong> A smooth and warming soup made with fresh carrots, ginger,
+                    and a
+                    touch of coconut milk.</p>
+                <h3>Mains</h3>
+                <p><strong>Herb-Crusted Cauliflower Steak:</strong> A hearty cauliflower steak crusted with fresh herbs,
+                    served with garlic mashed potatoes and seasonal vegetables.</p>
+                <p><strong>Vegetable Wellington:</strong> A medley of seasonal vegetables and mushrooms wrapped in flaky
+                    puff pastry, served with a rich tomato basil sauce.</p>
+                <p><strong>Stuffed Bell Peppers:</strong> Bell peppers filled with a flavorful mix of rice, black beans,
+                    corn, and cheese, baked to perfection and served with a side of avocado salsa.</p>
+                <h3>Desserts</h3>
+                <p><strong>Chocolate Lava Cake:</strong> A decadent chocolate cake with a molten center, served with
+                    vanilla
+                    bean ice cream and fresh berries.</p>
+                <p><strong>Lemon Tart:</strong> A tangy lemon tart with a buttery crust, topped with a light meringue
+                    and a
+                    raspberry coulis.</p>
+                <p><strong>Pistachio Panna Cotta:</strong> Creamy pistachio panna cotta with a hint of vanilla, served
+                    with
+                    honeycomb and caramelized figs.</p>
+            </div>
+        </section>
+
+        <!-- Section for Takeaway Menu -->
+        <section class="menu-section2">
+            <div class="menu-category2">
+                <h2>Takeaway Menu</h2>
+                <h3>Starters</h3>
+                <p><strong>Classic Caesar Salad:</strong> Crisp romaine lettuce, shaved parmesan, croutons, and Caesar
+                    dressing (vegetarian version with no anchovies).</p>
+                <p><strong>Tomato Basil Bruschetta:</strong> Fresh tomatoes, basil, and mozzarella on toasted baguette
+                    slices, drizzled with balsamic glaze.</p>
+
+                <h3>Mains</h3>
+                <p><strong>Vegetarian Spaghetti Carbonara:</strong> Spaghetti in a creamy sauce with vegetarian bacon,
+                    parmesan, and a hint of black pepper.</p>
+                <p><strong>Vegetarian Alfredo Pasta:</strong> Fettuccine in a rich Alfredo sauce with a medley of
+                    grilled
+                    vegetables and a side of garlic bread.</p>
+                <p><strong>Vegetarian Pizza:</strong> A delicious pizza topped with bell peppers, onions, mushrooms,
+                    olives,
+                    and mozzarella cheese.</p>
+
+                <h3>Desserts</h3>
+                <p><strong>Tiramisu:</strong> Traditional Italian dessert with layers of coffee-soaked ladyfingers and
+                    mascarpone cream (vegetarian version).</p>
+                <p><strong>Cheesecake:</strong> Creamy cheesecake with a graham cracker crust, served with a berry
+                    compote.
+                </p>
+                <p><strong>Brownie Bites:</strong> Rich and fudgy brownie squares, perfect for a sweet treat on the go.
+                </p>
+            </div>
+
+        </section>
+
+        <footer>
+            <a href="Restaurant.html"><img src="../IMG/Restaurant logo.PNG" alt="Footer Logo" width="50px"
+                    height="50px"></a>
+            <p>&copy; 2024 Our Restaurant</p>
+            <div>
+                <div class="address">
+                    <h3>ADDRESS</h3>
+                    <p>1 Dunworth Street,<br>
+                        Rusholme, <br>
+                        Manchester, <br>
+                        M14 7WH.</p>
+                </div>
+                <div>
+                    <h3>GET IN TOUCH</h3>
+                    <p>khaluuchenna@gmail.com</p>
+                    <p>+44 (0) 161 123 4567</p>
+                </div>
+                <div class="working-hours">
+                    <h3>SERVICE HOURS</h3>
+                    <p>Wednesday: 19:00- 00:00 <br>
+                        Thursday: 19:00 - 00:00 <br>
+                        Friday: 19:00 - 00:00 <br>
+                        Saturday: 12:00 - 16:00 / 19:00 - 00:00 <br>
+                        Sunday - Tuesday: Closed
+                    </p>
+                </div>
+                <div>
+                    <h3>SOCIAL</h3>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"
+                            aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="extras">
+                <ul>
+                    <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="legal-notice.html" target="_blank">Legal Notice</a></li>
+                    <li><a href="cookies.html" target="_blank">Cookies Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+/* Reservation Container */
+
+/* Define styles for the reservation container */
+.reservation-container {
+    display: inline-block;
+    /* Display as inline-block */
+    margin-left: 25%;
+    /* Add left margin */
+    margin-right: 30%;
+    /* Add right margin */
+    width: 50%;
+    /* Set width */
+    padding: 10px;
+    /* Add padding inside the container */
+}
+
+/* Form Group */
+
+/* Define styles for form groups */
+.form-group {
+    margin: 15px 0;
+    /* Add margin above and below form groups */
+}
+
+/* Form Group Labels */
+
+/* Define styles for labels within form groups */
+.form-group label {
+    display: block;
+    /* Display as block */
+    margin-bottom: 5px;
+    /* Add bottom margin */
+    font-weight: bold;
+    /* Make text bold */
+}
+
+/* Form Group Inputs and Textareas */
+
+/* Define styles for inputs and textareas within form groups */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Add padding inside inputs and textareas */
+    border: 1px solid var(--black-olive);
+    /* Add border with color */
+    border-radius: 5px;
+    /* Round the corners */
+}
+
+/* Form Group Textareas */
+
+/* Define additional styles for textareas within form groups */
+.form-group textarea {
+    resize: vertical;
+    /* Allow vertical resizing */
+    height: 100px;
+    /* Set height */
+}
+
+/* Submit Button */
+
+/* Define styles for the submit button */
+button[type="submit"] {
+    background-color: #333;
+    /* Set background color */
+    color: var(--white);
+    /* Set text color */
+    padding: 10px 20px;
+    /* Add padding inside the button */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Round the corners */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    font-size: 1em;
+    /* Set font size */
+}
+
+/* Submit Button Hover */
+
+/* Define hover effect for the submit button */
+button[type="submit"]:hover {
+    background-color: #555;
+    /* Change background color on hover */
+}
+
+/* Location Section */
+
+/* Define styles for the location section */
+.location {
+    margin-top: 40px;
+    /* Add top margin */
+}
+
+/* Location Iframe */
+
+/* Define styles for the iframe within the location section */
+.location iframe {
+    border: 0;
+    /* Remove border */
+    width: 100%;
+    /* Full width */
+    height: 500px;
+    /* Set height */
+}
