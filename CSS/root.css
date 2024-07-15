@@ -298,9 +298,10 @@ h2 {
     /* Use grid for layout */
     grid-row-start: 3
 }
-
+/* display for none */
 .cookies-style{
-    display: none;
+    display: none; 
+
 }
 
 /* Ensure text within the cookies banner is centered */
